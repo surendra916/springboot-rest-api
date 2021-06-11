@@ -21,6 +21,11 @@ public class TodoController {
 
     @Autowired
     private TodosRepo todosRepo;
+    
+    @GetMapping("/")
+    public String sample(){
+        return "Automatic Deployment Succeeded!!!!";
+    }
 
     @GetMapping("/getAllTodos")
     public ResponseEntity<List<Todo>> getAllTodos() {
