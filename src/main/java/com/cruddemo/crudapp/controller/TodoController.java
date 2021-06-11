@@ -13,7 +13,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ssr-context-api-todo-app.netlify.app")
 public class TodoController {
 
     @Autowired
