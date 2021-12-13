@@ -22,4 +22,7 @@ public class Todo {
     private String todoDescription;
     @Column(name = "isCompleted")
     private int isCompleted;
+
+    @Column
+    private int day;
 }

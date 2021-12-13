@@ -30,7 +30,7 @@ public class TodoController {
     @GetMapping("/getAllTodos")
     public ResponseEntity<List<Todo>> getAllTodos() {
         List allTodos = todoService.getTodos();
-
+        System.out.println("inside getAllTodos() method");
         return new ResponseEntity<List<Todo>>(allTodos,HttpStatus.OK);
     }
 
