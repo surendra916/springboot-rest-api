@@ -25,4 +25,7 @@ public class Todo {
 
     @Column
     private int day;
+
+    @Column
+    private int week;
 }
